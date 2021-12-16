@@ -1,4 +1,4 @@
-name: Build nim-esp8266-sdk
+name: Build
 on: push
 
 jobs:
