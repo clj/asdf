@@ -25,7 +25,4 @@ jobs:
         working-directory: c2nim-esp8266
       - run: make C2NIM=c2nim-esp8266/c2nim_esp8266
       - run: make C2NIM=c2nim-esp8266/c2nim_esp8266 dist
-
-
-###
-# when using uses: docker:// workspace is mounted in /github/workspace
+        if: ${{ startsWith(github.ref_name, 'v') }}
