@@ -39,7 +39,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref_name, 'release-')
         with:
-          body_path: ${{ github.workspace }}/release-notes/${{ steps.get_release_date.outputs.release_date }}
+          body_path: ${{ github.workspace }}/release-notes/${{ steps.get_release_date.outputs.release_date }}.md
           files:
             dist/nim_esp8266_nonos_sdk-*
           fail_on_unmatched_files: true
